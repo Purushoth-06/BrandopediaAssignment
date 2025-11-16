@@ -1,20 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import useAppFonts from "./src/theme/fonts";
+import * as Animatable from "react-native-animatable";
+import HomeScreen from "./src/ui/HomeScreen";
 
 export default function App() {
+  const fontsLoaded = useAppFonts();
+
+  if (!fontsLoaded) {
+    return (
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+        <Animatable.Text
+          animation="fadeIn"
+          iterationCount="infinite"
+          duration={2000}
+          style={{
+            fontFamily: "Poppins_400Regular",
+            fontSize: 20,
+            color: "#FFFFFF",
+          }}
+        >
+          LOADING
+        </Animatable.Text>
+      </View>
+    );
+  }
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <StatusBar style="light" backgroundColor="#0A121E" />
+      <HomeScreen />
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

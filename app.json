@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "BrandopediaAssignment",
-    "slug": "BrandopediaAssignment",
+    "name": "Grownest",
+    "slug": "grownest-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/app-logo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -17,8 +17,8 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/android-adaptive-logo.png",
+        "backgroundColor": "#002120"
       },
       "edgeToEdgeEnabled": true
     },
