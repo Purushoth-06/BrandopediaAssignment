@@ -241,7 +241,7 @@ export default function HomeScreen() {
             smart money habits through goal-setting and real-world experiences.
           </Text>
 
-          {/* Features – Expandable */}
+          {/* Features*/}
           <Text
             style={{
               color: "#fff",
@@ -323,7 +323,7 @@ export default function HomeScreen() {
             ))}
           </View>
 
-          {/* Testimonials – All visible */}
+          {/* Testimonials*/}
           <Text
             style={{
               color: "#fff",
@@ -414,10 +414,8 @@ export default function HomeScreen() {
             ))}
           </View>
 
-          {/* App promo */}
           <View style={{ alignItems: "center", marginVertical: 50 }}>
             <View style={{ alignItems: "center", marginVertical: 50 }}>
-              {/* Title & subtitle */}
               <Text
                 style={{
                   color: "#fff",
@@ -441,7 +439,6 @@ export default function HomeScreen() {
                 Available now on iOS and Android
               </Text>
 
-              {/* Buttons – centered, equal width, nice spacing */}
               <View
                 style={{
                   flexDirection: "row",
@@ -476,7 +473,7 @@ export default function HomeScreen() {
             </View>
           </View>
 
-          {/* FAQs – Expandable */}
+          {/* FAQs */}
           <Text
             style={{
               color: "#fff",
